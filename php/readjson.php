@@ -5,15 +5,10 @@
 	// json_decode , true : convert data json từ kiểu json chuyển qua array
 	if(isset($fileNameJson)) {
 		$arr = json_decode(file_get_contents($fileNameJson), true);
-
 		foreach ($arr as $key => $value) {
 			$arrBrand = $value;
-			echo '<pre>';
-			var_dump($arrBrand);
 		}
-	}
-	else
-	{
+	} else {
 		echo "Khong tim thay";
 	}
 ?>
